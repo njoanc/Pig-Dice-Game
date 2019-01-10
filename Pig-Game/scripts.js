@@ -1,5 +1,6 @@
 // declare global vars
 var scores, roundScores, activePlayer, gamePlaying, lastDice;
+
 // call intialised function
 init();
 // on click of btn roll
@@ -64,6 +65,7 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
       // without input default score
       winningScore = 100;
     }
+
     // Check if player won the game based on target score
     if (scores[activePlayer] >= winningScore) {
       // add text winner to active player
@@ -87,6 +89,7 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
     }
   }
 });
+
 function nextPlayer() {
   // player change
   // if active player = 0, change to player 1, else active player = 0
@@ -101,6 +104,7 @@ function nextPlayer() {
   document.querySelector(".player-0-panel").classList.toggle("active");
   document.querySelector(".player-1-panel").classList.toggle("active");
 }
+
 document.querySelector(".btn-new").addEventListener("click", init);
 
 function init() {
@@ -110,9 +114,11 @@ function init() {
   roundScore = 0;
   activePlayer = 0;
   gamePlaying = true;
+
   // hide the dice
   document.querySelector(".dice").style.display = "none";
   document.querySelector(".dice2").style.display = "none";
+
   // reset all scores and current
   document.getElementById("score-0").textContent = "0";
   document.getElementById("score-1").textContent = "0";
@@ -121,12 +127,15 @@ function init() {
   // change player names back
   document.getElementById("name-0").textContent = "Player 1";
   document.getElementById("name-1").textContent = "Player 2";
+
   // remove winner class to active player panel
   document.querySelector(".player-0-panel").classList.remove("winner");
   document.querySelector(".player-1-panel").classList.remove("winner");
+
   // remove active class to active player panel
   document.querySelector(".player-0-panel").classList.remove("active");
   document.querySelector(".player-1-panel").classList.remove("active");
   document.querySelector(".player-0-panel").classList.add("active");
 }
+
 // two 6 in a row player loses score and goes to next player
