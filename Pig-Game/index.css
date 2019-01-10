@@ -21,13 +21,13 @@ body {
   font-family: Lato;
   font-weight: 300;
   position: relative;
-  height: 100vh;
+  height: 160vh;
   color: #555;
   border: 100px solid rgb(206, 236, 206);
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .wrapper {
@@ -179,6 +179,10 @@ i {
   left: 45%;
 }
 .footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background-color: #bed6d6;
   text-align: center;
 }
@@ -194,4 +198,36 @@ h1 {
 }
 ul {
   list-style-type: square;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul {
+  list-style-type: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(33, 219, 233);
+}
+nav > ul > li > a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+}
+/*Change the link color to #111(black)on hover*/
+li a:hover {
+  background-color: blue;
+}
+nav {
+  text-align: right;
+}
+#aboutMe {
+  background-color: beige;
+  text-align: center;
+}
+#gameRules {
+  background-color: beige;
 }
