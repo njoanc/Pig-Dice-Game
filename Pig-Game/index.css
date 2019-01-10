@@ -21,7 +21,7 @@ body {
   font-family: Lato;
   font-weight: 300;
   position: relative;
-  height: 160vh;
+  height: 180vh;
   color: #555;
   border: 100px solid rgb(206, 236, 206);
   margin-left: 100px;
@@ -171,7 +171,7 @@ i {
 }
 .winner .player-name {
   font-weight: 300;
-  color: #eb4d4d;
+  color: #afe224;
 }
 .winningScore {
   position: absolute;
@@ -195,6 +195,11 @@ i {
 h1 {
   color: green;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#header {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
 }
 ul {
   list-style-type: square;
@@ -230,4 +235,5 @@ nav {
 }
 #gameRules {
   background-color: beige;
+  text-align: center;
 }
