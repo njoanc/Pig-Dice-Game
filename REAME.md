@@ -6,7 +6,7 @@
 
 # Description
 
-This Program has been built to help people who loves online Pig Dice games to explore many games and enjoy them. Before playing, the player has the chance of knowing the author and how the game is played. The author used the knowledge acquired in the programming training with the Moringa School/Rwanda.
+This Program has been built to help people who loves online Pig Dice games to explore many games and enjoy them. The user can choose to play on two levels.Before playing, the player has the chance of knowing the author and how the game is played. The author used the knowledge acquired in the programming training with the Moringa School/Rwanda.
 
 # Rules of the games:
 
