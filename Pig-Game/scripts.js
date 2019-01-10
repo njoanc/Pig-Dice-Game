@@ -43,3 +43,23 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
     lastDice = dice;
   }
 });
+// hold button on click
+document.querySelector('.btn-hold').addEventListener('click', function() {
+    // only if game playing is true
+    if (gamePlaying) {
+      // Add CURRENT score to GLOBAL score
+      scores[activePlayer] += roundScore;
+  
+      // Update the active player score 
+      document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+  
+      // get winning score
+      var input = document.querySelector('.winningScore').value;
+       var winningScore;
+      // if there is an input
+      if(input) {
+         winningScore = input;
+      } else {
+        // without input default score
+        winningScore = 100;
+      }
