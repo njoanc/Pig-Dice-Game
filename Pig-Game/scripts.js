@@ -87,3 +87,17 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
     }
   }
 });
+function nextPlayer() {
+  // player change
+  // if active player = 0, change to player 1, else active player = 0
+  activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
+  // reset
+  roundScore = 0;
+
+  // reset currents to 0
+  document.getElementById("current-0").textContent = "0";
+  document.getElementById("current-1").textContent = "0";
+  // toggle active on panels
+  document.querySelector(".player-0-panel").classList.toggle("active");
+  document.querySelector(".player-1-panel").classList.toggle("active");
+}
