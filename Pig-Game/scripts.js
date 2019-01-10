@@ -44,22 +44,46 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
   }
 });
 // hold button on click
-document.querySelector('.btn-hold').addEventListener('click', function() {
-    // only if game playing is true
-    if (gamePlaying) {
-      // Add CURRENT score to GLOBAL score
-      scores[activePlayer] += roundScore;
-  
-      // Update the active player score 
-      document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
-  
-      // get winning score
-      var input = document.querySelector('.winningScore').value;
-       var winningScore;
-      // if there is an input
-      if(input) {
-         winningScore = input;
-      } else {
-        // without input default score
-        winningScore = 100;
-      }
+document.querySelector(".btn-hold").addEventListener("click", function() {
+  // only if game playing is true
+  if (gamePlaying) {
+    // Add CURRENT score to GLOBAL score
+    scores[activePlayer] += roundScore;
+
+    // Update the active player score
+    document.querySelector("#score-" + activePlayer).textContent =
+      scores[activePlayer];
+
+    // get winning score
+    var input = document.querySelector(".winningScore").value;
+    var winningScore;
+    // if there is an input
+    if (input) {
+      winningScore = input;
+    } else {
+      // without input default score
+      winningScore = 100;
+    }
+    // Check if player won the game based on target score
+    if (scores[activePlayer] >= winningScore) {
+      // add text winner to active player
+      document.querySelector("#name-" + activePlayer).textContent = "Winner!";
+      // hide dice 1
+      document.querySelector(".dice").style.display = "none";
+      // hide dice 2
+      document.querySelector(".dice2").style.display = "none";
+      // adding winner class to active player panel
+      document
+        .querySelector(".player-" + activePlayer + "-panel")
+        .classList.add("winner");
+      // remove the active class from active player panel
+      document
+        .querySelector(".player-" + activePlayer + "-panel")
+        .classList.remove("active");
+      gamePlaying = false;
+    } else {
+      //next player
+      nextPlayer();
+    }
+  }
+});
