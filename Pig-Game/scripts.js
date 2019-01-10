@@ -101,3 +101,15 @@ function nextPlayer() {
   document.querySelector(".player-0-panel").classList.toggle("active");
   document.querySelector(".player-1-panel").classList.toggle("active");
 }
+document.querySelector('.btn-new').addEventListener('click', init);
+
+function init() {
+  document.querySelector('.winningScore').textContent = '';
+
+  scores = [0, 0];
+  roundScore = 0;
+  activePlayer = 0;
+  gamePlaying = true;
+// hide the dice
+document.querySelector('.dice').style.display = 'none';
+document.querySelector('.dice2').style.display = 'none';
