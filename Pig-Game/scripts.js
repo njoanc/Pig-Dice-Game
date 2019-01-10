@@ -101,23 +101,31 @@ function nextPlayer() {
   document.querySelector(".player-0-panel").classList.toggle("active");
   document.querySelector(".player-1-panel").classList.toggle("active");
 }
-document.querySelector('.btn-new').addEventListener('click', init);
+document.querySelector(".btn-new").addEventListener("click", init);
 
 function init() {
-  document.querySelector('.winningScore').textContent = '';
+  document.querySelector(".winningScore").textContent = "";
 
   scores = [0, 0];
   roundScore = 0;
   activePlayer = 0;
   gamePlaying = true;
-// hide the dice
-document.querySelector('.dice').style.display = 'none';
-document.querySelector('.dice2').style.display = 'none';
-// reset all scores and current
-document.getElementById('score-0').textContent = '0';
-document.getElementById('score-1').textContent = '0';
-document.getElementById('current-0').textContent = '0';
-document.getElementById('current-1').textContent = '0';
-// change player names back
-document.getElementById('name-0').textContent = 'Player 1';
-document.getElementById('name-1').textContent = 'Player 2';
+  // hide the dice
+  document.querySelector(".dice").style.display = "none";
+  document.querySelector(".dice2").style.display = "none";
+  // reset all scores and current
+  document.getElementById("score-0").textContent = "0";
+  document.getElementById("score-1").textContent = "0";
+  document.getElementById("current-0").textContent = "0";
+  document.getElementById("current-1").textContent = "0";
+  // change player names back
+  document.getElementById("name-0").textContent = "Player 1";
+  document.getElementById("name-1").textContent = "Player 2";
+  // remove winner class to active player panel
+  document.querySelector(".player-0-panel").classList.remove("winner");
+  document.querySelector(".player-1-panel").classList.remove("winner");
+  // remove active class to active player panel
+  document.querySelector(".player-0-panel").classList.remove("active");
+  document.querySelector(".player-1-panel").classList.remove("active");
+  document.querySelector(".player-0-panel").classList.add("active");
+}
