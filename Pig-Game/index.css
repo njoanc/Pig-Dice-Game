@@ -8,3 +8,17 @@
   display: table;
   clear: both;
 }
+body {
+  background-image: linear-gradient(
+      rgba(65, 194, 119, 0.4),
+      rgba(47, 201, 142, 0.4)
+    ),
+    url(https://bit.ly/2slNwrg);
+  background-size: cover;
+  background-position: center;
+  font-family: Lato;
+  font-weight: 300;
+  position: relative;
+  height: 90vh;
+  color: rgb(86, 106, 112);
+}
