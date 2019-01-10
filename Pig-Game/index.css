@@ -23,6 +23,11 @@ body {
   position: relative;
   height: 100vh;
   color: #555;
+  border: 100px solid rgb(206, 236, 206);
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .wrapper {
@@ -43,10 +48,6 @@ body {
   height: 600px;
   padding: 100px;
 }
-
-/**********************************************
-*** PLAYERS
-**********************************************/
 
 .player-name {
   font-size: 40px;
@@ -190,4 +191,7 @@ i {
 h1 {
   color: green;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+ul {
+  list-style-type: square;
 }
