@@ -129,3 +129,4 @@ function init() {
   document.querySelector(".player-1-panel").classList.remove("active");
   document.querySelector(".player-0-panel").classList.add("active");
 }
+// two 6 in a row player loses score and goes to next player
