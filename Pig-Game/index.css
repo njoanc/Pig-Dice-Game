@@ -155,3 +155,8 @@ i {
   font-weight: 300;
   color: #eb4d4d;
 }
+.winningScore {
+  position: absolute;
+  top: 80px;
+  left: 45%;
+}
