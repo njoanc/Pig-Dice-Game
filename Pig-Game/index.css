@@ -23,7 +23,7 @@ body {
   position: relative;
   height: 180vh;
   color: #555;
-  border: 100px solid rgb(206, 236, 206);
+  border: 100px solid whitesmoke;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 50px;
@@ -188,7 +188,7 @@ i {
 }
 
 .footerP {
-  color: rgb(76, 30, 204);
+  color: rgb(25, 190, 47);
   font-family: FiraSans-Regular, sans-serif;
   font-size: 16px;
 }
