@@ -148,3 +148,6 @@ i {
 .dice2 {
   left: 55%;
 }
+.winner {
+  background-color: #f7f7f7;
+}
