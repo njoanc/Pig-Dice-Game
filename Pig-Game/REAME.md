@@ -1,6 +1,6 @@
 # PIG DICE GAME
 
-. January, 10, 2019.
+January, 10, 2019.
 
 ### By **Jeanne d'Arc NYIRAMWIZA**
 
@@ -16,7 +16,7 @@ This Program has been built to help people who loves online Pig Dice games to ex
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
 
-## Setup/Installation Requirements
+# Setup/Installation Requirements
 
 - To start playing this game, use the following commands:
 
@@ -24,20 +24,20 @@ https://github.com/njoanc/JAVASCRIPT-Programming-Test.git, or https://njoanc.git
 cd jsTest.html atom . or
 code . (this is if Visual Studio Code is your preferred text editor)
 
-## Known Bugs
+# Known Bugs
 
 You must be online the first time you use the wizard to generate an app or no templates will be loaded.
 
-## Technologies Used
+# Technologies Used
 
 HTML, javaScript and jQuery
 
-## Contact details
+# Contact details
 
 - email: njoanc@gmail.com
 - Phone Number: +250783451689
 
-## License
+# License
 
 - MIT License,
   Copyright (c) 2019 Jeanne d'Arc NYIRAMWIZA
